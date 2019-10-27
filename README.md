@@ -59,7 +59,7 @@ Run:
 Equivalent build command with gcc:
 
 ```sh
-export SKIA_SRC=~/src/skia
+export SKIA_SRC=/path/to/skia
 
 gcc main.cpp \
 -std=c++14 -lstdc++ \
