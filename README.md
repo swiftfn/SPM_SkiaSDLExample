@@ -31,15 +31,11 @@ ninja -C out/mac
 
 ## Build this example
 
-Create symlinks to the built Skia above:
+Create symlinks to the built Skia above (`include`, `out/mac`, and `src` directories are used):
 
 ```sh
 cd Sources/cpp
-mkdir skia
-cd skia
-ln -s /path/to/skia/include
-ln -s /path/to/skia/src
-ln -s /path/to/skia/out
+ln -s /path/to/skia skia
 ```
 
 Build:
@@ -52,6 +48,7 @@ swift build -c release
 Run:
 
 ```sh
+swift run cpp
 .build/debug/cpp
 .build/release/cpp
 ```
